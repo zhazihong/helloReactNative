@@ -22,11 +22,16 @@ class RowComponent extends PureComponent {
         return (
             platform === Platform.OS ?
                 <TouchableHighlight {...this.props} onPress={() => {
-                    console.log("item", item.key)
+                    console.log("item", item.key);
+                    console.log('----------------------');
+                    console.log(item.key);
+                    console.log(Actions);
+                    console.log(TestExamplesList);
                     if(TestExamplesList.Modules[item.key]){
                         Actions.ComponentTest({ExampleKey: item.key})
                     }else{
                         Actions[item.key]()
+                        // Actions.ComponentTest({ExampleKey: item.key})
                     }
                 }}>
                     <View style={styles.row}>

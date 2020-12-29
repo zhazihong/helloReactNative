@@ -1,4 +1,4 @@
-'use strict';
+
 export type ComponentExample = {
     key: string,
     module: Object,
@@ -131,7 +131,11 @@ const StudyExamples: Array<ComponentExample> = [
     }, {
         key: 'HelloReactNative',
         module: require('../learn/HelloReactNative')
-    },];
+    }, {
+        key: 'OneStepPass',
+        module: require('../learn/OneStepPass')
+    },
+];
 const APIExamples: Array<ComponentExample> = [
     {
         key: 'AlertExample',
